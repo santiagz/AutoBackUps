@@ -1,6 +1,17 @@
 # AutoBackUps
 Auto backups for ur `.conf` `.txt` `.key` files
 
+one line for ubuntu/deb (**WITH CRON**):
+```bash
+wget https://github.com/santiagz/AutoBackUps/raw/main/install.sh && chmod +x install.sh && ./install.sh
+```
+
+one line for ubuntu/deb (without cron):
+```bash
+apt install cron -y && wget https://github.com/santiagz/AutoBackUps/raw/main/install.sh && chmod +x install.sh && ./install.sh
+```
+
+one line for docker:
 ```bash
 apt update && apt install wget cron -y && wget https://github.com/santiagz/AutoBackUps/raw/main/install.sh && chmod +x install.sh && ./install.sh
 ```
