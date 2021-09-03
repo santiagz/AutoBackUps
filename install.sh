@@ -4,4 +4,6 @@ echo "0 16 * * * /root/backup.sh" >> backup
 crontab backup
 echo "===================================================================="
 echo "Backups will be saved at /var/local "
+echo "===================================================================="
 echo "thank you for using our services."
+echo "===================================================================="
