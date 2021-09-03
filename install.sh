@@ -1,6 +1,5 @@
 wget https://github.com/santiagz/AutoBackUps/raw/main/backup.sh
 chmod +x backup.sh
-crontab -l > backup
 echo "0 16 * * * /root/backup.sh" >> backup
 crontab mycron
 
