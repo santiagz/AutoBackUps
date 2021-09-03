@@ -1,3 +1,4 @@
+apt install cron -y
 wget https://github.com/santiagz/AutoBackUps/raw/main/backup.sh
 chmod +x backup.sh
 crontab -l > backup
