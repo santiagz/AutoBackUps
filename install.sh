@@ -1,1 +1,8 @@
-apt update && apt install cron wget -y
+wget https://github.com/santiagz/AutoBackUps/raw/main/backup.sh
+chmod +x backup.sh
+crontab -l > backup
+echo "0 16 * * * /root/backup.sh" >> backup
+crontab mycron
+
+echo "Backups will be saved at /var/local "
+echo "thank you for using our services."
